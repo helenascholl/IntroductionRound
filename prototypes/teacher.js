@@ -11,7 +11,7 @@ Teacher.prototype.constructor = Teacher;
 Teacher.prototype.sayHello = function () {
     let output = 'Hello. My name is Mr';
 
-    if (this.gender == 'female') {
+    if (this.gender === 'female') {
         output += 's';
     }
 
