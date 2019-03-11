@@ -7,13 +7,15 @@ class Teacher extends Person {
     }
 
     sayHello() {
-        let output = 'Hello. My name is Mr';
+        let string = 'Hello my name is Mr';
 
         if (this.gender === 'female') {
-            output += 's';
+            string += 's';
         }
 
-        console.log(`${output}. ${this.name.last} and I teach ${this.subject}.`);
+        string += `. ${this.name.first} and I teach ${this.subject}.`;
+
+        console.log(string);
     }
 }
 

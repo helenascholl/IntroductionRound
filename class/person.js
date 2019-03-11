@@ -13,22 +13,16 @@ class Person {
     }
 
     tellHobbies() {
-        switch (this.hobbies.length) {
-            case 0:
-                console.log('I have no hobbies.');
-                break;
+        if (this.hobbies.length === 0) {
+            console.log('I have no hobbies.');
+        } else if (this.hobbies.length === 1) {
+            console.log(`My only hobby is ${this.hobbies[0]}.`);
+        } else {
+            console.log('My hobbies are:');
 
-            case 1:
-                console.log(`My only hobby is ${this.hobbies[0]}.`);
-                break;
-
-            default:
-                console.log('My hobbies are:');
-
-                for (let hobby of this.hobbies) {
-                    console.log(` - ${hobby}`);
-                }
-                break;
+            for (let hobby of this.hobbies) {
+                console.log(`- ${hobby}`);
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ class Student extends Person {
     }
 
     sayHello() {
-        console.log(`Hi. My name is ${this.name.first} and I study ${this.subject}.`);
+        console.log(`Hi. I'm ${this.name.first} and I study ${this.subject}.`);
     }
 }
 
